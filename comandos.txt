@@ -1,0 +1,16 @@
+/**Instalar taildwindcss en react**/
+npm install -D tailwindcss postcss autoprefixer
+
+/**Crea un par de archivos**/
+npx tailwindcss init -p
+
+
+/**react Router DOM**/
+instalar react router DOM
+Ayuda con la autenticacion
+Libreria de routing
+
+npm i reac-router-dom
+
+/**Componentes **/
+Los Componentes deben de iniciar con mayuscula
