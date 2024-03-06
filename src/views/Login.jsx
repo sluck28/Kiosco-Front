@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 
 export default function login() {
   return (
-    <>
+    <div>
     <h1 className="text-4xl font-bold">Iniciar Sesion</h1>
 
-    <p>Para crear un pedido inicia sesion</p>
+    <p>Para crear un pedido debes de iniciar sesion</p>
 
     <div className="bg-white shadow-md rounded-md mt-10 px-5 py-10">
         <form action="" noValidate>
@@ -34,6 +35,11 @@ export default function login() {
           uppercase font-bold rounded-sm"/>
           </form> 
     </div>
-  </>
+    <nav className="mt-5">
+      <Link to="/auth/registro" className="text-indigo-700">
+          No tienes cuenta? Crea una 
+      </Link>
+    </nav>
+  </div>
   )
 }

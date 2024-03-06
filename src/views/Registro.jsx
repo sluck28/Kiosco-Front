@@ -1,7 +1,9 @@
+import {Link} from 'react-router-dom'
+
 export default function Registro() {
   return (
     /**Retornar nuestras varibles con un div */
-    <>
+    <div>
       <h1 className="text-4xl font-bold">Crea tu cuenta</h1>
       <p>Crea tu cuenta llenando el formulario</p>
 
@@ -55,7 +57,13 @@ export default function Registro() {
             uppercase font-bold rounded-sm"/>
             </form> 
       </div>
-    </>
+      <nav className="mt-5">
+        {/* link de router-dom  de react para evitar la carga de pagina */}
+      <Link to="/auth" className="text-indigo-700">
+            Ya tienes cuenta? Inicia Sesion
+      </Link>
+    </nav>
+    </div>
    
   )
 }
