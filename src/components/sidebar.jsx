@@ -1,4 +1,4 @@
-import { categorias } from "../data/categorias";
+
 import Categoria from "./Categoria";
 
 export default function sidebar() {
