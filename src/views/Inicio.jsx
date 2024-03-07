@@ -1,5 +1,5 @@
 import { productos } from "../data/productos";
-import {  } from "module";
+import Producto from "../components/Producto"; 
 export default function inicio() {
   return (
     <>
@@ -9,7 +9,10 @@ export default function inicio() {
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             {productos.map(producto=>(
 
-              p
+              <Producto 
+                key={producto.imagen}  
+                producto={producto}                
+              />
             ))}
         </div>
 
