@@ -1,8 +1,9 @@
 import { FormatearDinero } from "../helpers";
+import useQuiosco from "../hooks/useQuiosco";
 export default function Producto({producto}) {
     /**Parte para crear logica del sistema */
     const {nombre,precio,imagen}=producto;    
-
+    const {handleClickModal}=useQuiosco;
   return (
     <div className="border p-3 shadow bg-white">
         <img src={`/img/${imagen}.jpg`} alt={`imagen ${nombre}`}  className="w-full"/>
@@ -17,7 +18,9 @@ export default function Producto({producto}) {
             </p>
 
             <button type="button" className="bg-indigo-600 hover:bg-indigo-800 text-white w-full mt-5 p-3 
-            uppercase font-bold rounded-md">
+            uppercase font-bold rounded-md"
+            
+            >
                 Agregar
             </button>
         </div>
